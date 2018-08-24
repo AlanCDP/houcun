@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaf4fc"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/main_top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_40"
+                        android:text="候村煤矿安全生产责任清单信息系统"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/shape_white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/margin_3"
+                        android:drawableStart="@mipmap/shutiao"
+                        android:text="安全生产管理"
+                        android:textColor="@color/blue2"
+                        android:textSize="13sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_5">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="清单录入" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="清单审核" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="考核创建" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="责任考核" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="责任审核" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_5">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="督办落实" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="督办受理" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="年度查询" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="阅读查询" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView style="@style/main_textView" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/shape_white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/margin_3"
+                        android:drawableStart="@mipmap/shutiao"
+                        android:text="安全生产管理"
+                        android:textColor="@color/blue2"
+                        android:textSize="13sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_5">
+
+
+                        <RelativeLayout
+                            android:id="@+id/list_enter"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_luru"
+                                android:text="清单录入" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/list_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_qingdan_shenhe"
+                                android:text="清单审核" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/assess_create"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_kaohe_chuangjian"
+                                android:text="考核创建" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/responsibility_assess"
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_zeren_kaohe"
+                                android:text="责任考核" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/responsibility_check"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_zeren_shenhe"
+                                android:text="责任审核" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_5">
+
+
+                        <RelativeLayout
+                            android:id="@+id/du_ban_luo_shi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_duban_luoshi"
+                                android:text="督办落实" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/du_ban_shou_li"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_duban_shouli"
+                                android:text="督办受理" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/year_search"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_niandu_chaxun"
+                                android:text="年度查询" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/read_search"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/main_textView"
+                                android:drawableTop="@mipmap/main_yuedu_chaxun"
+                                android:text="月度查询" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView style="@style/main_textView" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_3"
+                    android:drawableStart="@mipmap/shutiao"
+                    android:text="临时任务管理"
+                    android:textColor="@color/blue2"
+                    android:textSize="13sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10">
+
+
+                    <RelativeLayout
+                        android:id="@+id/task_distributing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/main_textView"
+                            android:drawableTop="@mipmap/main_renwu_paifa"
+                            android:text="任务派发" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/task_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20">
+
+                        <TextView
+                            style="@style/main_textView"
+                            android:drawableTop="@mipmap/main_renwu_shouli"
+                            android:text="任务受理" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_3"
+                    android:drawableStart="@mipmap/shutiao"
+                    android:text="重点工程管理"
+                    android:textColor="@color/blue2"
+                    android:textSize="13sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10">
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/task_accept1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       >
+
+                        <TextView
+                            style="@style/main_textView"
+                            android:drawableTop="@mipmap/main_renwu_shouli"
+                            android:text="任务受理" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

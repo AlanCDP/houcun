@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/action_bar_tv" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:minEms="6"
+                    android:padding="@dimen/dp_10"
+                    android:text="实际时间起"
+                    android:textColor="@color/text_shallow_gray"
+                    android:textSize="@dimen/margin_13" />
+
+                <TextView
+                    android:id="@+id/plan_start_time"
+                    android:layout_width="212dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:layout_weight="1"
+                    android:drawableEnd="@mipmap/next_right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_0.5"
+                android:background="@color/lin_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:minEms="6"
+                    android:padding="@dimen/dp_10"
+                    android:text="实际时间止"
+                    android:textColor="@color/text_shallow_gray"
+                    android:textSize="@dimen/margin_13" />
+
+                <TextView
+                    android:id="@+id/plan_end_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:layout_weight="1"
+                    android:drawableEnd="@mipmap/next_right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_0.5"
+                android:background="@color/lin_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:minEms="6"
+                    android:padding="@dimen/dp_10"
+                    android:text="完成情况"
+                    android:textColor="@color/text_shallow_gray"
+                    android:textSize="@dimen/margin_13" />
+
+                <TextView
+                    android:id="@+id/complete_size"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:layout_weight="1"
+                    android:drawableEnd="@mipmap/next_right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_0.5"
+                android:background="@color/lin_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:minEms="6"
+                    android:padding="@dimen/dp_10"
+                    android:text="备注"
+                    android:textColor="@color/text_shallow_gray"
+                    android:textSize="@dimen/margin_13" />
+
+                <cn.com.szw.lib.myframework.view.ClearWriteEditText
+                    android:id="@+id/remark"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入您需要备注的内容"
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_shallow_gray"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_0.5"
+                android:background="@color/lin_gray" />
+
+            <TextView
+                android:id="@+id/commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginTop="30dp"
+                android:background="@mipmap/longbtn"
+                android:gravity="center"
+                android:padding="@dimen/margin_10"
+                android:text="回复"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_15"
+                android:background="@color/background" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:minEms="6"
+                        android:padding="@dimen/dp_10"
+                        android:text="计划时间起"
+                        android:textColor="@color/text_shallow_gray"
+                        android:textSize="@dimen/margin_13" />
+
+                    <TextView
+                        android:id="@+id/start_time"
+                        android:layout_width="212dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_20"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5"
+                    android:background="@color/lin_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:minEms="6"
+                        android:padding="@dimen/dp_10"
+                        android:text="计划时间止"
+                        android:textColor="@color/text_shallow_gray"
+                        android:textSize="@dimen/margin_13" />
+
+                    <TextView
+                        android:id="@+id/end_time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_20"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5"
+                    android:background="@color/lin_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:minEms="6"
+                        android:padding="@dimen/dp_10"
+                        android:text="受理单位"
+                        android:textColor="@color/text_shallow_gray"
+                        android:textSize="@dimen/margin_13" />
+
+                    <TextView
+                        android:id="@+id/unit"
+                        android:layout_width="213dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_20"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5"
+                    android:background="@color/lin_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:minEms="6"
+                        android:padding="@dimen/dp_10"
+                        android:text="受理人"
+                        android:textColor="@color/text_shallow_gray"
+                        android:textSize="@dimen/margin_13" />
+
+                    <TextView
+                        android:id="@+id/people"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_20"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5"
+                    android:background="@color/lin_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:minEms="6"
+                        android:padding="@dimen/dp_10"
+                        android:text="项目名称"
+                        android:textColor="@color/text_shallow_gray"
+                        android:textSize="@dimen/margin_13" />
+
+                    <TextView
+                        android:id="@+id/project_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_20"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5"
+                    android:background="@color/lin_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:minEms="6"
+                        android:padding="@dimen/dp_10"
+                        android:text="具体步骤"
+                        android:textColor="@color/text_shallow_gray"
+                        android:textSize="@dimen/margin_13" />
+
+                    <TextView
+                        android:id="@+id/steps"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_20"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5"
+                    android:background="@color/lin_gray" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

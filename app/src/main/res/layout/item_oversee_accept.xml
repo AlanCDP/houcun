@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_yuan_red" />
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/margin_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2013点开链接点开链接恐龙当家"
+                android:textColor="@color/text_gray"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@mipmap/icon_button_status"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="待受理"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_0.5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/textGary" />
+
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="督办内容：督办内容"
+                android:textColor="@color/text_shallow_gray"
+                android:textSize="11sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="督办人:张展"
+                        android:textColor="@color/text_shallow_gray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/post"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="督办等级:矿长"
+                        android:textColor="@color/text_shallow_gray"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/limit_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="限制时间：2020-09-09"
+                android:textColor="@color/text_shallow_gray"
+                android:textSize="11sp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginStart="@dimen/margin_20"
+            android:background="@drawable/shape_white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_50">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="侯村煤矿安全生产责任清单信息系统"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_30"
+                android:background="@drawable/shape_login_user"
+                android:layout_marginStart="@dimen/margin_30"
+                android:layout_marginEnd="@dimen/margin_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/login_icon_user"/>
+
+                <cn.com.szw.lib.myframework.view.ClearWriteEditText
+                    android:id="@+id/account"
+                    android:hint="请输入账号"
+                    android:textSize="@dimen/margin_13"
+                    android:singleLine="true"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:textColorHint="@color/text_shallow_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/shape_login_user"
+                android:layout_marginStart="@dimen/margin_30"
+                android:layout_marginEnd="@dimen/margin_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/login_user_pwd"/>
+
+                <cn.com.szw.lib.myframework.view.ClearWriteEditText
+                    android:id="@+id/pwd"
+                    android:hint="请输入密码"
+                    android:textSize="@dimen/margin_13"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:textColorHint="@color/text_shallow_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/text_shallow_gray"
+                android:text="忘记密码？"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/margin_30"
+                />
+
+
+
+            <TextView
+                android:padding="15dp"
+                android:id="@+id/btn_login"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:text="登 陆"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="40dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/login_btn_bg"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/login_pic" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
