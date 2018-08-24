@@ -20,7 +20,7 @@ import cn.com.szw.lib.myframework.base.BaseActivity;
 
 /**
  * Created by weicao on 2018/8/15.
- * 清单审核activity
+ * 责任考核activity
  */
 
 public class ResponsibilityAssessActivity extends BaseActivity {
