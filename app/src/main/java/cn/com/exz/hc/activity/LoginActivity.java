@@ -7,12 +7,15 @@ import com.blankj.utilcode.util.SPUtils;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 import cn.com.exz.hc.R;
 import cn.com.exz.hc.application.App;
+import cn.com.exz.hc.entity.RemindBean;
 import cn.com.exz.hc.entity.UserBean;
 import cn.com.exz.hc.utils.FusionField;
 import cn.com.szw.lib.myframework.base.BaseActivity;
@@ -34,6 +37,8 @@ public class LoginActivity extends BaseActivity {
     ClearWriteEditText pwd;
     @BindView(R.id.btn_login)
     TextView btnLogin;
+
+    public static List<RemindBean>list = new ArrayList<>();
 
     @Override
     public boolean initToolbar() {
@@ -80,13 +85,51 @@ public class LoginActivity extends BaseActivity {
                             SPUtils.getInstance().put("account",account.getText().toString());
                             SPUtils.getInstance().put("pwd",pwd.getText().toString());
 
-                            Utils.startActivity(mContext,MainActivity.class);
+//                            Utils.startActivity(mContext,MainActivity.class);
+
+
+                            initPort1();
                         }
                     }
 
                     @Override
                     public void onError(Response<NetEntity<UserBean>> response) {
                         super.onError(response);
+
+
+
+
+                    }
+                });
+    }
+
+
+    private void initPort1() {
+        HashMap<String, String> params = new HashMap<>();
+        params.put("sessionId", App.getLoginUserId());
+
+
+
+        OkGo.<NetEntity<List<RemindBean>>>post(FusionField.REMIND)
+                .params(params)
+                .tag(this)
+                .execute(new DialogCallback<NetEntity<List<RemindBean>>>(mContext) {
+
+                    @Override
+                    public void onSuccess(Response<NetEntity<List<RemindBean>>> response) {
+
+                        if (response.body().getCode() == Constants.NetCode.SUCCESS){
+                            list = response.body().getData();
+                            Utils.startActivity(mContext,MainActivity.class);
+
+                        }
+                    }
+
+                    @Override
+                    public void onError(Response<NetEntity<List<RemindBean>>> response) {
+                        super.onError(response);
+
+
 
 
                     }

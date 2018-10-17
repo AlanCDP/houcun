@@ -113,23 +113,6 @@ public class AssessCreateActivity extends BaseActivity implements SwipeRefreshLa
 
     private void initRecycler() {
         list = new ArrayList<>();
-//        list.add(new AssessCreateEntity());
-//        list.add(new AssessCreateEntity());
-//        list.add(new AssessCreateEntity());
-//        list.add(new AssessCreateEntity());
-//        list.add(new AssessCreateEntity());
-//        list.add(new AssessCreateEntity());
-//        list.add(new AssessCreateEntity());
-//        list.add(new AssessCreateEntity());
-
-//
-//        adapter = new AssessCreateAdapter();
-//        adapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
-//        adapter.setLoadMoreView(new CustomLoadMoreView());
-//        recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
-//        recyclerView.addItemDecoration(new RecycleViewDivider(mContext, LinearLayoutManager.HORIZONTAL, 20, ContextCompat.getColor(mContext, R.color.background)));
-//        recyclerView.setAdapter(adapter);
-//        recyclerView.setClipToPadding(false);
 
 
 

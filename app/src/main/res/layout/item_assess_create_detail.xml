@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_5"
-                android:text="单位：侯村煤矿"
+                android:text="单位：候村煤矿"
                 android:textColor="@color/text_shallow_gray"
                 android:textSize="11sp" />
 

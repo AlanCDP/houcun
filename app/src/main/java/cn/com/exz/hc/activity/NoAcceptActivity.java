@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
@@ -18,7 +19,6 @@ import cn.com.exz.hc.R;
 import cn.com.exz.hc.application.App;
 import cn.com.exz.hc.utils.FusionField;
 import cn.com.szw.lib.myframework.base.BaseActivity;
-import cn.com.szw.lib.myframework.config.Constants;
 import cn.com.szw.lib.myframework.utils.RxBus;
 import cn.com.szw.lib.myframework.utils.net.NetEntity;
 import cn.com.szw.lib.myframework.utils.net.callback.DialogCallback;
@@ -106,9 +106,11 @@ public class NoAcceptActivity extends BaseActivity {
                     @Override
                     public void onSuccess(Response<NetEntity<String>> response) {
 
-                        if (response.body().getCode() == Constants.NetCode.SUCCESS) {
+                        if (response.body().getCode() == 202) {
                             finish();
                             RxBus.get().post("refresh", "refresh");
+                            Toast.makeText(mContext, response.body().getMessage(), Toast.LENGTH_SHORT).show();
+
 
                         }
                     }

@@ -60,7 +60,7 @@
                 android:gravity="start"
                 android:minEms="6"
                 android:padding="@dimen/dp_10"
-                android:text="职务"
+                android:text="职位"
                 android:textColor="@color/text_shallow_gray"
                 android:textSize="@dimen/margin_13" />
 

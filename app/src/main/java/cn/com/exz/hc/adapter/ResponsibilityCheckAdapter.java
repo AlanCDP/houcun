@@ -44,9 +44,9 @@ public class ResponsibilityCheckAdapter extends BaseQuickAdapter<ResponsibilityC
 
         people.setText(String.format("审核人：%s", item.getReviewer().getRealname()));
         if (item.getStatus().equals("3")){
-            status.setText("待审核");
-        }else if (item.getStatus().equals("1")){
             status.setText("已审核");
+        }else if (item.getStatus().equals("2")){
+            status.setText("待审核");
         }
         content.setText(item.getExamContent());
         point.setText(String.format("标准的分：%s", item.getStandardScore()));

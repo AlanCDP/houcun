@@ -366,7 +366,7 @@ public class ListEnterFragment extends MyBaseFragment {
                     etContent.setShakeAnimation();
                 } else if (TextUtils.isEmpty(etPoint.getText().toString())) {
                     etPoint.setShakeAnimation();
-                } else if (reviewer.isEmpty() && post.equals("")) {
+                } else if (reviewer.isEmpty()) {
                     Toast.makeText(getContext(), "请选择审核人", Toast.LENGTH_SHORT).show();
                 } else {
                     initPort();

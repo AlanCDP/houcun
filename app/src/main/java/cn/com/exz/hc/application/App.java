@@ -43,7 +43,7 @@ public class App extends MyApplication {
 
 
 
-    private static UserBean userBean;
+    public static UserBean userBean;
     public static void setUser(UserBean user) {
         App.userBean = user;
     }
@@ -61,6 +61,8 @@ public class App extends MyApplication {
             return userBean.getSessionId();
         }
     }
+
+
 
 
 

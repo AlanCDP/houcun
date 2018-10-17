@@ -19,7 +19,8 @@ public class FusionField {
      * 云端服务器地址
      */
 
-    public final static String CLOUD_SERVER_URL = "http://192.168.3.186:8063/houcun/";
+    public final static String CLOUD_SERVER_URL = "http://192.168.3.188:8080/houcun/";
+//    public final static String CLOUD_SERVER_URL = "http://39.106.203.141:9002/houcun/";
 
 
 
@@ -214,7 +215,47 @@ public class FusionField {
     public final static String COUNT = CLOUD_SERVER_URL+"mobile/mobileResponsibilityExamController/calculateScore.do";
 
 
+    /**
+     * 首页公告提醒数
+     */
+
+    public final static String REMIND = CLOUD_SERVER_URL+"mobile/mobileTaskDispatchController/getHomePageTask.do";
 
 
+
+    /**
+     * 请假管理
+     */
+
+    public final static String LeaveList = CLOUD_SERVER_URL+"mobile/mobileLeaveController/getMobileLevel.do";
+
+
+
+    /**
+     * 请假录入
+     */
+
+    public final static String LeaveEnter = CLOUD_SERVER_URL+"mobile/mobileLeaveController/doAdd.do";
+
+
+    /**
+     * 审核
+     */
+
+    public final static String LeaveCheck = CLOUD_SERVER_URL+"mobile/mobileLeaveController/doHandleExam.do";
+
+
+    /**
+     * 销假
+     */
+
+    public final static String LeaveMiss = CLOUD_SERVER_URL+"mobile/mobileLeaveController/goHandleFinish.do";
+
+
+    /**
+     * 公告
+     */
+
+    public final static String notice = CLOUD_SERVER_URL+"mobile/mobileNoticeController/list.do";
 
 }

@@ -2,12 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.com.exz.hc">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+
+
+
+
     <application
         android:name=".application.App"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/login_pic"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.My">
         <activity android:name=".activity.LoginActivity">
@@ -53,6 +61,30 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".activity.YearSearchActivity" />
         <activity android:name=".activity.MonthSearchActivity" />
+        <activity android:name=".activity.LeaveActivity" />
+        <activity android:name=".activity.LeaveDetailActivity" />
+        <activity android:name=".activity.ZhuGuanLeaderActivity" />
+        <activity android:name=".activity.LeaveCheckActivity" />
+        <activity android:name=".activity.ShangJiLeaderActivity" />
+        <activity
+            android:name=".activity.ShangjiPeopleActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.LeaveZhuGuanDetailActivity" />
+        <activity android:name=".activity.NoticeActivity" />
+        <activity android:name=".activity.NoticeDetailActivity" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cn.com.exz.hc.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
     </application>
 
 </manifest>

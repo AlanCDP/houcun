@@ -15,6 +15,7 @@ import com.lzy.okgo.model.Response;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -90,6 +91,8 @@ public class AlReadyDistributingFragment extends MyBaseFragment {
 
     @Override
     public void initView() {
+        listUnit = new ArrayList<>();
+        listPeople = new ArrayList<>();
 
 
         initData();

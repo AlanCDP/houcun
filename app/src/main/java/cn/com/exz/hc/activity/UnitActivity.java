@@ -125,18 +125,21 @@ public class UnitActivity extends Activity {
                     recyclerView.setAdapter(adapter);
                     adapter.setNewData(list);
                 } else {
+
                     data.clear();
 
+                    if (list.size() > 0) {
+                        for (ThreeDataModel.DepartListBean departListBean : list) {
 
-                    for (ThreeDataModel.DepartListBean departListBean : list) {
+                            if (departListBean.getDepartname().contains(s)) {
+                                data.add(departListBean);
+                            }
 
-                        if (departListBean.getDepartname().contains(s)) {
-                            data.add(departListBean);
                         }
-
+                        recyclerView.setAdapter(adapter);
+                        adapter.setNewData(data);
                     }
-                    recyclerView.setAdapter(adapter);
-                    adapter.setNewData(data);
+
                 }
             }
 

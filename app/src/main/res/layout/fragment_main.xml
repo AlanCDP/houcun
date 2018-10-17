@@ -61,155 +61,7 @@
 
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="@dimen/margin_5">
-
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/main_textView"
-                                android:drawableTop="@mipmap/main_qingdan_luru"
-                                android:text="清单录入" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/main_textView"
-                                android:drawableTop="@mipmap/main_qingdan_luru"
-                                android:text="清单审核" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/main_textView"
-                                android:drawableTop="@mipmap/main_qingdan_luru"
-                                android:text="考核创建" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/main_textView"
-                                android:drawableTop="@mipmap/main_qingdan_luru"
-                                android:text="责任考核" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/main_textView"
-                                android:drawableTop="@mipmap/main_qingdan_luru"
-                                android:text="责任审核" />
-                        </RelativeLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="@dimen/margin_5">
-
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/main_textView"
-                                android:drawableTop="@mipmap/main_qingdan_luru"
-                                android:text="督办落实" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/main_textView"
-                                android:drawableTop="@mipmap/main_qingdan_luru"
-                                android:text="督办受理" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/main_textView"
-                                android:drawableTop="@mipmap/main_qingdan_luru"
-                                android:text="年度查询" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                style="@style/main_textView"
-                                android:drawableTop="@mipmap/main_qingdan_luru"
-                                android:text="阅读查询" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView style="@style/main_textView" />
-                        </RelativeLayout>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/dp_10"
-                    android:layout_marginStart="@dimen/dp_10"
-                    android:layout_marginTop="90dp"
-                    android:background="@drawable/shape_white"
-                    android:orientation="vertical"
-                    android:padding="@dimen/dp_10">
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:drawablePadding="@dimen/margin_3"
-                        android:drawableStart="@mipmap/shutiao"
-                        android:text="安全生产管理"
-                        android:textColor="@color/blue2"
-                        android:textSize="13sp" />
-
-
-                    <LinearLayout
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/margin_5"
@@ -286,6 +138,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -354,12 +207,30 @@
 
                     </LinearLayout>
 
+
+
+
+
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </android.support.v7.widget.RecyclerView>
+
+
                 </LinearLayout>
 
             </RelativeLayout>
 
 
             <LinearLayout
+                android:id="@+id/layout"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/dp_10"
@@ -384,13 +255,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="@dimen/margin_10">
+                    android:padding="5dp">
 
 
                     <RelativeLayout
+                        android:padding="@dimen/margin_5"
+                        android:visibility="gone"
                         android:id="@+id/task_distributing"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        >
 
                         <TextView
                             style="@style/main_textView"
@@ -399,10 +273,13 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:padding="@dimen/margin_5"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/margin_3"
                         android:id="@+id/task_accept"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/margin_20">
+                        >
 
                         <TextView
                             style="@style/main_textView"
@@ -416,6 +293,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/layout1"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/dp_10"
@@ -460,6 +339,133 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_3"
+                    android:drawableStart="@mipmap/shutiao"
+                    android:text="请假管理"
+                    android:textColor="@color/blue2"
+                    android:textSize="13sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/leave"
+                        android:padding="@dimen/margin_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            style="@style/main_textView"
+                            android:drawableTop="@mipmap/main_renwu_paifa"
+                            android:text="请假申请" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/zhuguan"
+                        android:padding="@dimen/margin_5"
+                        android:layout_marginStart="@dimen/margin_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            style="@style/main_textView"
+                            android:drawableTop="@mipmap/main_renwu_shouli"
+                            android:text="主管审批" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/shangji"
+                        android:padding="@dimen/margin_5"
+                        android:layout_marginStart="@dimen/margin_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            style="@style/main_textView"
+                            android:drawableTop="@mipmap/main_renwu_shouli"
+                            android:text="上级审批" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_3"
+                    android:drawableStart="@mipmap/shutiao"
+                    android:text="公告栏"
+                    android:textColor="@color/blue2"
+                    android:textSize="13sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/notice"
+                        android:padding="@dimen/margin_5"
+                        android:layout_marginStart="@dimen/margin_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            style="@style/main_textView"
+                            android:drawableTop="@mipmap/main_renwu_shouli"
+                            android:text="公告" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
 
 
         </LinearLayout>

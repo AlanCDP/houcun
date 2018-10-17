@@ -44,7 +44,14 @@ public class AssessCreateDetailAdapter extends BaseQuickAdapter<AssessCreateDeta
         content.setText(item.getExam_content());
         unit.setText(String.format("单位：%s", item.getDuty_unit().getDepartname()));
         post.setText(String.format("职位：%s", item.getPost().getPost_name()));
-        time.setText(String.format("周期%s年", item.getExam_cycle()));
+
+        if (item.getExam_cycle().equals("year")){
+            time.setText("周期：年");
+        }else if (item.getExam_cycle().equals("month")){
+            time.setText("周期：月");
+        }if (item.getExam_cycle().equals("quarter")){
+            time.setText("周期：季");
+        }
 
 
     }
