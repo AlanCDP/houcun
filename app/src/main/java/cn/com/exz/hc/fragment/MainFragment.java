@@ -105,6 +105,7 @@ public class MainFragment extends MyBaseFragment {
     public void initView() {
 
 
+
         List<String> strings = new ArrayList<>();
         for (int i = 0; i < App.userBean.getFunctions().size(); i++) {
             if (!App.userBean.getFunctions().get(i).equals("AQ")) {
