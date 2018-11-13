@@ -20,6 +20,8 @@ public class FusionField {
      */
 
 //    public final static String CLOUD_SERVER_URL = "http://192.168.3.188:8080/houcun/";
+//    public final static String CLOUD_SERVER_URL = "http://192.168.5.44:8080/houcun/";
+//    public final static String CLOUD_SERVER_URL = "http://192.168.1.9:8086/houcun/";
     public final static String CLOUD_SERVER_URL = "http://39.106.203.141:9002/houcun/";
 
 
