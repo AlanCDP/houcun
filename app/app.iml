@@ -28,7 +28,6 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/debug" isTestSource="false" generated="true" />
@@ -49,13 +48,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/debug/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/assets" type="java-test-resource" />
@@ -63,6 +55,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testDebug/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/assets" type="java-resource" />
@@ -84,120 +83,130 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources" />
+      <excludeFolder url="file://$MODULE_DIR$/build/generated/source/r" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/build-info" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes-jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-verifier" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-apk" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaPrecompile" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/multi-dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/reload-dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/resources" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/split-apk" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/splits-support" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/reports" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="TEST" name="runner-0.5" level="project" />
-    <orderEntry type="library" scope="TEST" name="espresso-idling-resource-2.2.2" level="project" />
-    <orderEntry type="library" name="drawee-0.11.0" level="project" />
-    <orderEntry type="library" name="support-fragment-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="fresco-0.11.0" level="project" />
-    <orderEntry type="library" name="permissionsdispatcher-3.3.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="hamcrest-library-1.3" level="project" />
-    <orderEntry type="library" name="AndroidReflectKit-1.1.0" level="project" />
-    <orderEntry type="library" name="AndroidUnitConversion-1.1.0" level="project" />
-    <orderEntry type="library" name="rxandroid-2.0.1" level="project" />
-    <orderEntry type="library" name="xlhratingbar_lib-2.1" level="project" />
-    <orderEntry type="library" name="library-1.3.1" level="project" />
-    <orderEntry type="library" name="scrollable-1.3.0" level="project" />
-    <orderEntry type="library" name="rxjava-2.1.1" level="project" />
-    <orderEntry type="library" name="support-v13-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="butterknife-annotations-8.8.1" level="project" />
-    <orderEntry type="library" name="SwipeDelMenuLayout-V1.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="multidex-instrumentation-1.0.2" level="project" />
-    <orderEntry type="library" name="library-2.4.0" level="project" />
-    <orderEntry type="library" name="reactive-streams-1.0.0" level="project" />
-    <orderEntry type="library" name="SmartRefreshLayout-1.1.0-alpha-14" level="project" />
-    <orderEntry type="library" name="utilcode-1.19.0" level="project" />
-    <orderEntry type="library" name="imagepipeline-base-0.11.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="exposed-instrumentation-api-publish-0.5" level="project" />
-    <orderEntry type="library" name="FlycoRoundView_Lib-1.1.4" level="project" />
-    <orderEntry type="library" name="support-core-utils-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="CDPLibrary-2.0.5.1" level="project" />
-    <orderEntry type="library" name="BaseRecyclerViewAdapterHelper-2.9.42" level="project" />
-    <orderEntry type="library" name="support-vector-drawable-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="AndroidResource-1.2.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="javax.annotation-api-1.2" level="project" />
-    <orderEntry type="library" name="Android-AdvancedWebView-v3.1.3" level="project" />
-    <orderEntry type="library" name="universal-image-loader-1.9.5" level="project" />
-    <orderEntry type="library" name="appcompat-v7-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="banner-1.4.10" level="project" />
-    <orderEntry type="library" name="SmartAlertPop-c505c4b4b1" level="project" />
-    <orderEntry type="library" scope="TEST" name="javawriter-2.1.1" level="project" />
-    <orderEntry type="library" name="marqueeview-1.3.3" level="project" />
-    <orderEntry type="library" name="flowlayout-lib-1.0.3" level="project" />
-    <orderEntry type="library" name="AndroidContextHolder-1.1.0" level="project" />
-    <orderEntry type="library" name="BasePopup-2.0.7" level="project" />
-    <orderEntry type="library" name="support-annotations-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="fastjson-1.2.51" level="project" />
-    <orderEntry type="library" name="butterknife-8.8.1" level="project" />
-    <orderEntry type="library" name="support-core-ui-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="gson-2.8.0" level="project" />
-    <orderEntry type="library" name="support-v4-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="support-media-compat-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="jsoup-1.11.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="hamcrest-integration-1.3" level="project" />
-    <orderEntry type="library" name="rxbus-2.0.0" level="project" />
-    <orderEntry type="library" name="bolts-tasks-1.4.0" level="project" />
-    <orderEntry type="library" name="customactivityoncrash-2.2.0" level="project" />
-    <orderEntry type="library" name="AndroidFileReadWrite-1.1.0" level="project" />
-    <orderEntry type="library" name="library-1.2.4" level="project" />
-    <orderEntry type="library" name="imagepicker-0.6.1" level="project" />
-    <orderEntry type="library" name="systembartint-1.0.4" level="project" />
-    <orderEntry type="library" name="permissionsdispatcher-annotation-3.3.1" level="project" />
-    <orderEntry type="library" name="design-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="glide-3.7.0" level="project" />
-    <orderEntry type="library" name="FlycoTabLayout_Lib-2.1.2" level="project" />
-    <orderEntry type="library" name="constraint-layout-2.0.0-alpha2" level="project" />
-    <orderEntry type="library" name="zxing-library-2.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="jsr305-2.0.1" level="project" />
-    <orderEntry type="library" name="fbcore-0.11.0" level="project" />
-    <orderEntry type="library" name="rollviewpager-1.4.6" level="project" />
-    <orderEntry type="library" name="imagepipeline-0.11.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="espresso-core-2.2.2" level="project" />
-    <orderEntry type="library" name="qmui-1.1.3" level="project" />
-    <orderEntry type="library" name="AndroidDrawingView-1.6.7" level="project" />
-    <orderEntry type="library" scope="TEST" name="rules-0.5" level="project" />
-    <orderEntry type="library" name="transition-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="okio-1.13.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="javax.inject-1" level="project" />
-    <orderEntry type="library" name="android-gif-drawable-1.2.15" level="project" />
-    <orderEntry type="library" name="circleimageview-2.2.0" level="project" />
-    <orderEntry type="library" name="badgeview-1.1.3" level="project" />
-    <orderEntry type="library" name="pickerview-2.1.1" level="project" />
-    <orderEntry type="library" name="okhttp-3.8.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="hamcrest-core-1.3" level="project" />
-    <orderEntry type="library" name="timber-4.5.1" level="project" />
-    <orderEntry type="library" name="gradle-retrolambda-3.7.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="junit-4.12" level="project" />
-    <orderEntry type="library" name="recyclerview-v7-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="constraint-layout-solver-2.0.0-alpha2" level="project" />
-    <orderEntry type="library" name="support-compat-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="multidex-1.0.3" level="project" />
-    <orderEntry type="library" name="animated-vector-drawable-26.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="AndroidJsonModel-1.2.0" level="project" />
-    <orderEntry type="library" name="lottie-2.1.0" level="project" />
-    <orderEntry type="library" name="okgo-3.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.fresco:fbcore:0.11.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidContextHolder:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.8.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.fresco:drawee:0.11.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: de.hdodenhof:circleimageview:3.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.readystatesoftware.systembartint:systembartint:1.0.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.xingliuhua:xlhratingbar_lib:2.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.alibaba:fastjson:1.2.56@jar" level="project" />
+    <orderEntry type="library" name="Gradle: cat.ereza:customactivityoncrash:2.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.hotchemi:permissionsdispatcher-annotation:3.3.1@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core:2.2.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.bigkoo:pickerview:2.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:design:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-idling-resource:2.2.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.hotchemi:permissionsdispatcher:3.3.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: q.rorbin:badgeview:1.1.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton.timber:timber:4.7.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.AlanCDP:MyFrame:100.1.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidDrawingView:1.6.7@aar" level="project" />
+    <orderEntry type="library" name="Gradle: cn.yipianfengye.android:zxing-library:2.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.fresco:imagepipeline-base:0.11.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.PopFisher:SmartAlertPop:c505c4b4b1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.fresco:imagepipeline:0.11.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-compat:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.youth.banner:banner:1.4.10@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidUnitConversion:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.lzy.net:okgo:3.0.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.delight-im:Android-AdvancedWebView:v3.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton:butterknife:8.8.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidJsonModel:1.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.qmuiteam:qmui:1.1.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.zhy:flowlayout-lib:1.0.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-v13:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.hwangjr.rxbus:rxbus:2.0.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:exposed-instrumentation-api-publish:0.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.jude:rollviewpager:1.4.6@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide:3.7.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:transition:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: io.reactivex.rxjava2:rxandroid:2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jsoup:jsoup:1.11.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-media-compat:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.sunfusheng:marqueeview:1.3.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidResource:1.2.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: ru.noties:scrollable:1.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.annotation:javax.annotation-api:1.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:multidex:1.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.13.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:multidex-instrumentation:1.0.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton:butterknife-annotations:8.8.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.airbnb.android:lottie:2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.2@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-v4:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: io.reactivex.rxjava2:rxjava:2.2.4@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.blankj:utilcode:1.19.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:rules:0.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout:1.1.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.nostra13.universalimageloader:universal-image-loader:1.9.5@jar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:16.0.1@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.nineoldandroids:library:2.4.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner:0.5@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.chrisbanes.photoview:library:1.2.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:26.0.0-alpha1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.lzy.widget:imagepicker:0.6.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: me.drakeet.materialdialog:library:1.3.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: pl.droidsonroids.gif:android-gif-drawable:1.2.16@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidFileReadWrite:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidReflectKit:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.fresco:fresco:0.11.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-fragment:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:26.0.0-alpha1@aar" level="project" />
   </component>
 </module>
