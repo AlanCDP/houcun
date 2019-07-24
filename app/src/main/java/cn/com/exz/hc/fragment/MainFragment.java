@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.blankj.utilcode.util.SPUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemChildClickListener;
 
@@ -43,6 +44,7 @@ import cn.com.exz.hc.application.App;
 import cn.com.szw.lib.myframework.base.MyBaseFragment;
 import cn.com.szw.lib.myframework.utils.Utils;
 import cn.com.szw.lib.myframework.view.CustomLoadMoreView;
+import cn.jpush.android.api.JPushInterface;
 import q.rorbin.badgeview.QBadgeView;
 
 import static cn.com.exz.hc.activity.LoginActivity.list;
@@ -104,6 +106,7 @@ public class MainFragment extends MyBaseFragment {
     @Override
     public void initView() {
 
+        JPushInterface.setAlias(getContext(), 0, App.userBean.getUsername());
 
 
         List<String> strings = new ArrayList<>();

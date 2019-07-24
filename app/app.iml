@@ -48,13 +48,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/debug/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDebug/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDebug/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDebug/assets" type="java-test-resource" />
@@ -62,6 +55,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/testDebug/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testDebug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/assets" type="java-resource" />
@@ -125,8 +125,8 @@
     <orderEntry type="library" name="Gradle: de.hdodenhof:circleimageview:3.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.readystatesoftware.systembartint:systembartint:1.0.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.xingliuhua:xlhratingbar_lib:2.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.alibaba:fastjson:1.2.56@jar" level="project" />
     <orderEntry type="library" name="Gradle: cat.ereza:customactivityoncrash:2.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/CDP/Desktop/houcun/app/libs/jcore-android-2.0.1.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.hotchemi:permissionsdispatcher-annotation:3.3.1@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core:2.2.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.bigkoo:pickerview:2.1.1@aar" level="project" />
@@ -143,15 +143,17 @@
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.fresco:imagepipeline-base:0.11.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.PopFisher:SmartAlertPop:c505c4b4b1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.sunfusheng:marqueeview:1.3.8@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.fresco:imagepipeline:0.11.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.alibaba:fastjson:1.2.58@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-compat:26.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.youth.banner:banner:1.4.10@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-3@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidUnitConversion:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.lzy.net:okgo:3.0.4@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.delight-im:Android-AdvancedWebView:v3.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.jakewharton:butterknife:8.8.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/CDP/Desktop/houcun/app/libs/jpush-android-3.3.2.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:26.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidJsonModel:1.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.qmuiteam:qmui:1.1.3@aar" level="project" />
@@ -166,11 +168,10 @@
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable:26.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.1.3@jar" level="project" />
+    <orderEntry type="library" name="Gradle: pl.droidsonroids.relinker:relinker:1.3.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: io.reactivex.rxjava2:rxandroid:2.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42@aar" level="project" />
-    <orderEntry type="library" name="Gradle: org.jsoup:jsoup:1.11.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-media-compat:26.0.0-alpha1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.sunfusheng:marqueeview:1.3.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidResource:1.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: ru.noties:scrollable:1.3.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
@@ -182,12 +183,14 @@
     <orderEntry type="library" name="Gradle: com.airbnb.android:lottie:2.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4:26.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jsoup:jsoup:1.12.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: io.reactivex.rxjava2:rxjava:2.2.4@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.blankj:utilcode:1.19.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:rules:0.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout:1.1.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.nostra13.universalimageloader:universal-image-loader:1.9.5@jar" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:16.0.1@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-14@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.nineoldandroids:library:2.4.0@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner:0.5@aar" level="project" />
@@ -198,7 +201,6 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:26.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.lzy.widget:imagepicker:0.6.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: me.drakeet.materialdialog:library:1.3.1@aar" level="project" />
-    <orderEntry type="library" name="Gradle: pl.droidsonroids.gif:android-gif-drawable:1.2.16@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.vilyever:AndroidFileReadWrite:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
@@ -206,6 +208,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7:26.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.fresco:fresco:0.11.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: pl.droidsonroids.gif:android-gif-drawable:1.2.17@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment:26.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:26.0.0-alpha1@aar" level="project" />
   </component>

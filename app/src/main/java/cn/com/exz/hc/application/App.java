@@ -12,6 +12,7 @@ import com.uuzuche.lib_zxing.activity.ZXingLibrary;
 import cat.ereza.customactivityoncrash.CustomActivityOnCrash;
 import cn.com.exz.hc.entity.UserBean;
 import cn.com.szw.lib.myframework.app.MyApplication;
+import cn.jpush.android.api.JPushInterface;
 
 
 /**
@@ -24,7 +25,7 @@ public class App extends MyApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        salt="9E127A4F0BAB43B3";
+        salt = "9E127A4F0BAB43B3";
 
         MultiDex.install(this);
         com.blankj.utilcode.util.Utils.init(this);
@@ -34,6 +35,9 @@ public class App extends MyApplication {
 //        initImagePicker();
         ImageLoaderConfiguration config = ImageLoaderConfiguration.createDefault(this);
         ImageLoader.getInstance().init(config);
+
+        JPushInterface.init(this);
+        JPushInterface.setDebugMode(true);
     }
 
     @Override
@@ -42,8 +46,8 @@ public class App extends MyApplication {
     }
 
 
-
     public static UserBean userBean;
+
     public static void setUser(UserBean user) {
         App.userBean = user;
     }
@@ -61,10 +65,6 @@ public class App extends MyApplication {
             return userBean.getSessionId();
         }
     }
-
-
-
-
 
 
 }
