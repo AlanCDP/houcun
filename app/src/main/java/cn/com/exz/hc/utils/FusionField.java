@@ -19,10 +19,9 @@ public class FusionField {
      * 云端服务器地址
      */
 
-//    public final static String CLOUD_SERVER_URL = "http://192.168.3.188:8080/houcun/";
-//    public final static String CLOUD_SERVER_URL = "http://192.168.5.44:8080/houcun/";
-//    public final static String CLOUD_SERVER_URL = "http://192.168.1.9:8086/houcun/";
-    public final static String CLOUD_SERVER_URL = "http://172.16.10.132:8080/";
+//    public final static String CLOUD_SERVER_URL = "http://39.106.203.141:9002/houcun/";
+    public final static String CLOUD_SERVER_URL = "http://192.168.5.44:8080/houcun/";
+
 
 
 
